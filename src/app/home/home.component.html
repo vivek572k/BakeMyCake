@@ -1,0 +1,3 @@
+<app-category (filterEvent)="onClick($event)"></app-category>
+<app-search (searchEvent)="onSearch($event)"></app-search>
+<app-product-card  *ngFor="let product of products" [products]="product" ></app-product-card>

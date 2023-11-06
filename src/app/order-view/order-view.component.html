@@ -1,0 +1,141 @@
+<section id="section1">
+    <div id="img">
+        <img  src="../../assets/images/{{product.productName}}.jpg" width="550px"
+            height="65%">
+        <h3>{{product.productName}}</h3>
+        <hr>
+        <p>Price: {{product.price}} rs</p>
+        <span>Rating: <img src="../../assets/images/rating.jpg" width="30px"
+                height="20px">{{product.rating}}</span><br>
+        <span >{{product.description}}</span>
+
+    </div>
+</section>
+<section id="form">
+    <h1 id="title">Please Fill in Your Details</h1>
+    <form #orderForm="ngForm">
+        
+        <mat-form-field class="form" appearance="fill" style="width: 27rem;">
+            <input matInput placeholder="customerName" type="text" required pattern="^[a-zA-Z \-\']+"  id="customerName" name="customerName"
+                #customerName="ngModel" [(ngModel)]="order.customerName" />
+            <mat-error *ngIf="customerName?.errors?.['required']">
+                customerName is required.
+            </mat-error>
+
+            <mat-error *ngIf="customerName?.errors?.['pattern']">
+                customerName is must be alphabet.
+            </mat-error> 
+        </mat-form-field><br>
+
+        <mat-form-field appearance="fill" style="width: 27rem;">
+            <input matInput placeholder="phoneNumber " type="text" required pattern="^[789]\d{9,9}$" maxlength="10" name="phoneNumber" #phoneNumber="ngModel" 
+                [(ngModel)]="order.phoneNumber" />
+            <mat-error *ngIf="phoneNumber?.errors?.['required']">
+                phoneNumber is required.
+            </mat-error>
+
+            <mat-error *ngIf="phoneNumber?.errors?.['pattern']">
+                Should accept only a 10-digit number starting with 7, 8, or 9 .
+            </mat-error>
+        </mat-form-field> <br>
+
+        <mat-form-field appearance="fill" style="width: 27rem;">
+            <input matInput placeholder="customeremail " type="text" required
+                pattern="^[a-zA-Z_.+-]+[a-zA-Z0-9_.+-]+@[a-zA-Z-]+\.[a-zA-Z0-9-.]+$" name="customeremail"  #customeremail="ngModel"
+                [(ngModel)]="order.customeremail" />
+            <mat-error *ngIf="customeremail?.errors?.['required']">
+                Email id is required.
+            </mat-error>
+
+            <mat-error *ngIf="customeremail?.errors?.['pattern']">
+                Enter valid Email id.
+            </mat-error>
+        </mat-form-field><br>
+
+        
+        <mat-form-field appearance="fill" style="width: 27rem;">
+            <mat-label>Date</mat-label>
+            <input matInput [min]="minDate" [matDatepicker]="picker"   #date="ngModel" [(ngModel)]="order.date">
+            <mat-hint>MM/DD/YYYY</mat-hint>
+            <mat-datepicker-toggle matSuffix [for]="picker"></mat-datepicker-toggle>
+            <mat-datepicker #picker></mat-datepicker>
+        </mat-form-field><br>
+
+        <mat-form-field class="form" appearance="fill" style="width: 27rem;">
+            <input matInput type="text" placeholder="customerdoornumber" id="customerdoornumber" required name="customerdoornumber"
+                #customerdoornumber="ngModel" [(ngModel)]="order.customerdoornumber">
+            <mat-error *ngIf="customerdoornumber?.errors?.['required']">
+                customer door number is required.
+            </mat-error>
+        </mat-form-field><br>
+
+        <mat-form-field class="form" appearance="fill" style="width: 27rem;">
+            <input matInput type="text" placeholder="customer street" required name="customerstreet" #customerstreet="ngModel"
+                [(ngModel)]="order.customerstreet">
+            <mat-error *ngIf="customerstreet?.errors?.['required']">
+                customer street is required.
+            </mat-error>
+        </mat-form-field><br>
+
+        <mat-form-field class="form" appearance="fill" style="width: 27rem;">
+            <input matInput type="text" placeholder="cusomer city" required pattern="^[a-zA-Z \-\']+" name="cusomercity" #cusomercity="ngModel"
+                [(ngModel)]="order.cusomercity">
+            <mat-error *ngIf="cusomercity?.errors?.['required']">
+                customer city is required.
+            </mat-error>
+
+            <mat-error *ngIf="cusomercity?.errors?.['pattern']">
+                customer city  must be alphabet.
+            </mat-error>
+
+        </mat-form-field><br>
+
+        <mat-form-field class="form" appearance="fill" style="width: 27rem;">
+            <input matInput type="text" placeholder="customer state" required pattern="^[a-zA-Z \-\']+" name="customerstate" #customerstate="ngModel"
+                [(ngModel)]="order.customerstate">
+            <mat-error *ngIf="customerstate?.errors?.['required']">
+                customer State is required.
+            </mat-error>
+
+            <mat-error *ngIf="customerstate?.errors?.['pattern']">
+                customer State must be alphabet.
+            </mat-error>
+
+        </mat-form-field><br>
+
+        <mat-form-field class="form" appearance="fill" style="width: 27rem;">
+            <input matInput type="text" placeholder="cumstomer zipcode" required name="cumstomerzipcode" #cumstomerzipcode="ngModel"
+                [(ngModel)]="order.cumstomerzipcode">
+            <mat-error *ngIf="cumstomerzipcode?.errors?.['required']">
+                customer zipcode is required.
+            </mat-error>
+        </mat-form-field><br>
+
+        <mat-form-field class="form" appearance="fill" style="width: 27rem;">
+            <input matInput type="text" placeholder="Citation" name="citation" #citation="ngModel"
+                [(ngModel)]="order.citation">
+        </mat-form-field><br>
+
+
+        <mat-form-field class="form" appearance="fill" style="width: 27rem;">
+            <input matInput type="text" placeholder="quantity" required pattern="[1-9]{1,9}" name="quantity" #quantity="ngModel"
+             (input)="calculateTotalAmount()"   [(ngModel)]="order.quantity">
+            <mat-error *ngIf="quantity?.errors?.['required']">
+                quantity is required.
+            </mat-error>
+
+            <mat-error *ngIf="quantity?.errors?.['pattern']">
+                quantity is must be positive number.
+            </mat-error>
+            
+
+        </mat-form-field><br>
+
+       
+        <p><strong id="amount">Total Amount: </strong>{{order.totalAmount}} rs</p>
+
+        <button mat-raised-button color="accent" (click)="orderRequest()" [disabled]="orderForm.invalid">Place Order</button>
+    </form>
+
+
+</section>

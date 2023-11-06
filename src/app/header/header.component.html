@@ -1,0 +1,16 @@
+<mat-toolbar id="header" >
+    <h1>Bake My Cake</h1>
+    
+    <span class="example-spacer"></span>
+    
+    <button routerLink="/" mat-icon-button class="example-icon favorite-icon" aria-label="Example icon-button with heart icon">
+      <mat-icon >home</mat-icon>
+    </button>
+    <button mat-icon-button class="example-icon" aria-label="Example icon-button with share icon" routerLink="login"  *ngIf="!authService.isLoggedIn">
+      <mat-icon>login</mat-icon>
+      </button>
+      <button mat-icon-button class="example-icon" aria-label="Example icon-button with share icon" routerLink="" *ngIf="authService.isLoggedIn"  (click)="checkLoggedStatus()">
+        <mat-icon>logout</mat-icon>
+    </button>
+  </mat-toolbar>
+  

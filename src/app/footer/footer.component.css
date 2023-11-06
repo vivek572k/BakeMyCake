@@ -1,0 +1,15 @@
+img{
+    width: 40px;
+    height:40px;
+}
+#footer{
+    margin-top: 20em;
+    padding-left: 20px;
+    background-color:rgb(204, 213, 217);
+}
+#contetnt{
+    float: right;
+    padding-right: 25em;
+    color: brown;
+    padding-top: 50px;
+}

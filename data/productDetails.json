@@ -1,0 +1,166 @@
+{
+    "products": [
+        {
+            "id": 1,
+            "productName": "Berries Summer Cupcakes",
+            "category": "cake",
+            "price": 250,
+            "unit": "1",
+            "rating": 4.3,
+            "description": "These cupcakes are moist, fluffy, and infused with vanilla. They're stuffed with three types of summer berries - strawberries, raspberries, and blueberries"
+        },
+        {
+            "id": 2,
+            "productName": "Brownies Different Flavor",
+            "category": "brownie",
+            "price": 100,
+            "unit": "1/2",
+            "rating": 4.5,
+            "description": "Cheer up with this ultimate list of brownies varieties! Forget about the classic chocolate brownie that you've been eating all the time! The below brownies are an excellent combination of many other flavorful components"
+        },
+        {
+            "id": 3,
+            "productName": "Butter Cookies",
+            "category": "cookie",
+            "price": 150,
+            "unit": "2",
+            "rating": 4.2,
+            "description": "The butter cookie is often categorized as a 'crisp cookie' due to its texture, caused in part by the quantity of butter and sugar. It is generally necessary to chill its dough to enable proper manipulation and handling"
+        },
+        {
+            "id": 4,
+            "productName": "Cherry Jelly Cheesecake",
+            "category": "cake",
+            "price": 100,
+            "unit": "2 piece",
+            "rating": 4.7,
+            "description": "Fresh Cherry Cheesecake Cups… When colours, textures and flavours come together to scream delicious, delicious, delicious! These are nobake, quick, from scratch and taste amazing."
+        },
+        {
+            "id": 5,
+            "productName": "Chocolate Blueberries Cake",
+            "category": "cake",
+            "price": 300,
+            "unit": "2",
+            "rating": 4.8,
+            "description": " blueberry chocolate cake is a three layer moist chocolate cake with blueberry lemon frosting! The cake layers are incredibly moist and can be made in one bowl."
+        },
+        {
+            "id": 6,
+            "productName": "Chocolate Bonbons",
+            "category": "cake",
+            "price": 90,
+            "unit": "3 piece",
+            "rating": 4.0,
+            "description": " bonbon is a chocolate shell filled with literally anything, usually a flavored ganache, caramel, or jelly. "
+        },
+        {
+            "id": 7,
+            "productName": "Chocolate Cookies",
+            "category": "cookie",
+            "price": 60,
+            "unit": "2 piece",
+            "rating": 4.4,
+            "description": " chocolate chip cookie is a sweet baked treat that is recognized by its butter flavor and the inclusion of chocolate chips. Some variations can include nuts, oatmeal or raisins as well. Commercially available formats of chocolate chips cookies include:"
+        },
+        {
+            "id": 8,
+            "productName": "Chocolate Cupcake",
+            "category": "cake",
+            "price": 60,
+            "unit": "2 piece",
+            "rating": 4.4,
+            "description": "Chocolate cupcakes are the ultimate party food. These are super moist and bursting with rich, chocolaty flavor — and they're so easy to make. Frost these delicious chocolate cupcakes with buttercream or cream cheese frosting, or try royal icing or even whipped cream.."
+        },
+        {
+            "id": 9,
+            "productName": "Chocolate Summer Berries",
+            "category": "cake",
+            "price": 200,
+            "unit": "2",
+            "rating": 4.1,
+            "description": "silky Dark Milk chocolate bar is topped with strawberries, blueberries, cherries and cookie crunch, the perfect combination of chocolates and tanginess with every bite"
+        },
+        {
+            "id": 10,
+            "productName": "Classic Cheesecake",
+            "category": "cake",
+            "price": 350,
+            "unit": "1",
+            "rating": 4.9,
+            "description": "cheesecake as is for celebrations of any kind, but if you want to go the extra mile, try a drizzle of melted dark chocolate or a handful of fresh berries on top."
+        },
+        {
+            "id": 11,
+            "productName": "Cookies Cream Cake",
+            "category": "cake",
+            "price": 370,
+            "unit": "2",
+            "rating": 4.3,
+            "description": " Cookie “crunchies” sprinkled between the layers and 'crunchie crumbs' stirred into the frosting add delightful texture to every bite."
+        },
+        {
+            "id": 12,
+            "productName": "Easter Cupcakes",
+            "category": "cake",
+            "price": 120,
+            "unit": "1",
+            "rating": 3.9,
+            "description": "Easter Cupcakes look and taste like spring! A light lemon cupcake is topped with a grass nest with Easter egg. These cupcakes are perfect for any Easter or Spring party."
+        },
+        {
+            "id": 13,
+            "productName": "Fruit Cake",
+            "category": "cake",
+            "price": 150,
+            "unit": "1",
+            "rating": 4.1,
+            "description": "Fruitcake (or fruit cake or fruit bread) is a cake made with candied or dried fruit, nuts, and spices, and optionally soaked in spirits."
+        },
+        {
+            "id": 14,
+            "productName": "Isometric chocolate brownies",
+            "category": "brownie",
+            "price": 200,
+            "unit": "2",
+            "rating": 3.7,
+            "description": "Brownies come in a variety of forms and may be either fudgy or cakey, depending on their density. Brownies often, but not always, have a glossy 'skin' on their upper crust."
+        },
+        {
+            "id": 15,
+            "productName": "Monster Theme Cake",
+            "category": "cake",
+            "price": 400,
+            "unit": "2",
+            "rating": 4.4,
+            "description": "Cookies Monster Cake is a sweaty and adds some positive energy to play well. It is prepared with the best quality ingredients by maintaining all hygienic activities."
+        },
+        {
+            "id": 16,
+            "productName": "Muffin Devil Horns",
+            "category": "cake",
+            "price": 300,
+            "unit": "1",
+            "rating": 4.6,
+            "description": "With rich red velvet cupcakes topped with black buttercream frosting and decorated with red fondant horns, these cute little devil cupcakes are an impish treat!"
+        },
+        {
+            "id": 17,
+            "productName": "Muffin Ghost",
+            "category": "cake",
+            "price": 110,
+            "unit": "1",
+            "rating": 3.4,
+            "description": "Ghost cupcakes are the perfect spooky treat for celebrating Halloween! All your ghouls and goblins will love making and eating these halloween cupcakes. "
+        },
+        {
+            "id": 18,
+            "productName": "Pumpkin Spice Cupcakes",
+            "category": "cake",
+            "price": 210,
+            "unit": "2",
+            "rating": 3.4,
+            "description": "These hearty pumpkin cupcakes are topped with a cinnamon cream cheese frosting. Delicious in the fall for a tasty treat."
+        }
+    ]
+}

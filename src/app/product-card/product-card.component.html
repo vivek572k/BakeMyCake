@@ -1,0 +1,11 @@
+<div class="cards" routerLink="request/{{products.id}}">
+        <mat-card id="card" >
+                <img id="img" src="../../assets/images/{{products.productName}}.jpg" width="320px" height="55%">
+                <h3>{{products.productName}}</h3>
+                <h5><strong>Category:</strong> {{products.category}}</h5>
+                <p> <strong>Price:</strong> {{products.price}} rs</p>
+                
+                <span id="rating">Rating: <img src="../../assets/images/rating.jpg" width="20px"
+                                height="20px">{{products.rating}}</span><br>
+        </mat-card>
+</div>

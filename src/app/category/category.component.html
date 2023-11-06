@@ -1,0 +1,10 @@
+<div id="menu">
+<button id="category" mat-raised-button [matMenuTriggerFor]="menu">Category</button>
+<mat-button-toggle-group  [(ngModel)]="filter">
+<mat-menu #menu="matMenu">
+        <mat-button-toggle value="cake" (click)="click()">Cake</mat-button-toggle>
+        <mat-button-toggle value="cookie" (click)="click()">Cookies</mat-button-toggle>
+        <mat-button-toggle value="brownie" (click)="click()">Brownies</mat-button-toggle>
+    </mat-menu>
+</mat-button-toggle-group>
+</div>

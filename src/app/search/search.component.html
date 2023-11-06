@@ -1,0 +1,8 @@
+<div id="search">
+    <mat-form-field  appearance="outline" style="width: 25em;">
+        <mat-label>search</mat-label>
+        <input matInput type="text" name="searchquery" id="searchquery" [(ngModel)]="searchText" style="width: auto;">
+    </mat-form-field>
+    <button mat-button type="submit"(click)="search()"  >search</button>
+    <button mat-button type="submit"(click)="reset()">clear</button>
+</div>
